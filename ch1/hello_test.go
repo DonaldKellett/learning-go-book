@@ -6,7 +6,6 @@ import (
 )
 
 func TestHello(t *testing.T) {
-	var expected = "Hello, world!"
-	var actual = hello()
+	expected, actual := "Hello, world!", hello()
 	assert.Equal(t, expected, actual, "Function hello() should return \"Hello, world!\"")
 }

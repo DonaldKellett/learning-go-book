@@ -7,6 +7,6 @@ func hello() string {
 }
 
 func main() {
-	var greeting = hello()
-	fmt.Println(greeting)
+	s := hello()
+	fmt.Println(s)
 }
