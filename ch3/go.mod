@@ -1,4 +1,4 @@
-module donaldsebleung.com/learning-go-book-ch4
+module donaldsebleung.com/learning-go-book-ch3
 
 go 1.22.1
 
