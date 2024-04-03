@@ -23,3 +23,8 @@ jobs:
         cd ch2/
         make test
         cd ..
+    - name: Run unit tests on Chapter 3 code examples
+      run: |
+        cd ch3/
+        make test
+        cd ..
