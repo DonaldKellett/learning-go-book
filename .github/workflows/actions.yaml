@@ -1,0 +1,20 @@
+name: GitHub Actions pipeline for Learning Go code examples
+on:
+  push:
+    branches:
+    - main
+jobs:
+  chapter-1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '^1.22.1'
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Check formatting, vet code and run unit tests
+      run: |
+        cd ch1/
+        make test
+        cd ..
