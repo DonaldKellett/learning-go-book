@@ -9,7 +9,7 @@ Fork and clone this repository, then navigate to the project root and make it yo
 The code examples for each chapter is self-contained with [Make](https://www.gnu.org/software/make/) as the build system. For example, to run the code examples for chapter 1, enter the `ch1/` subdirectory and invoke the following command:
 
 ```bash
-make run
+make
 ```
 
 To run unit tests instead \(used in CI\):
