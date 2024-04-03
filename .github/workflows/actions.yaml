@@ -4,7 +4,7 @@ on:
     branches:
     - main
 jobs:
-  chapter-1:
+  run-unit-tests:
     runs-on: ubuntu-latest
     steps:
     - name: Set up Go
@@ -13,7 +13,7 @@ jobs:
         go-version: '^1.22.1'
     - name: Checkout
       uses: actions/checkout@v4
-    - name: Check formatting, vet code and run unit tests
+    - name: Run unit tests on Chapter 1 code examples
       run: |
         cd ch1/
         make test
