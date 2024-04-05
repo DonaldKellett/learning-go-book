@@ -27,13 +27,13 @@ test: ci-vet
 .PHONY:test
 
 build: vet
-	go build hello.go
+	go build
 .PHONY:build
 
 run: build
-	./hello
+	./learning-go-book-ch1
 .PHONY:run
 
 clean:
-	rm -vf ./hello
+	rm -vf ./learning-go-book-ch1
 .PHONY:clean

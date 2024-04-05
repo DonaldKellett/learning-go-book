@@ -27,13 +27,13 @@ test: ci-vet
 .PHONY:test
 
 build: vet
-	go build brainfuck.go
+	go build
 .PHONY:build
 
 run: build
-	./brainfuck
+	./learning-go-book-ch4
 .PHONY:run
 
 clean:
-	rm -vf ./brainfuck
+	rm -vf ./learning-go-book-ch4
 .PHONY:clean
