@@ -19,4 +19,11 @@ Hello World!
 
 The program interprets a Hello World program written in BF and displays the output of the BF program to STDOUT.
 
-Customizing the BF program or input passed to the interpreter via `make` is not supported but feel free to replace the program and input passed to the interpreter by modifying the source code directly and re-running `make`.
+Customizing the BF program or input passed to the interpreter via `make` is not supported but feel free to replace the program and input passed to the interpreter by modifying the source code directly.
+
+To re-run the program with modifications:
+
+```bash
+make clean
+make
+```
